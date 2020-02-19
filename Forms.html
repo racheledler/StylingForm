@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <style>
+            .user {
+                color:blue;
+            }
+            .pass {
+                color:blueviolet;
+            }
+            .Info {
+                color:crimson;
+            }
+            .InfoS {
+                color:darkmagenta;
+            }
+            .act {
+                color: darkorange;
+
+            }
+            .actc {
+                color:deeppink;
+            }
+            .mkt {
+                color:green;
+            }
+            .mktng {
+                color:indianred
+            }
+        </style>
+    </head>
+    <body>
+        <form 
+        action="http://example.com/join.php"
+        method="post">
+        <p class="user">Username: 
+            <input type="text" name="username"
+        size="15" maxlength="30" />
+        </p>
+        <p class="pass">Password:
+          <input type="password" name="password"
+        size="15" maxlength="30" />  
+        </p>
+        <span class="Info"><input type="radio" name="major" value="IS" checked=checked/> IS</span>
+        <span class="act"><input type="radio" name="major" value="Acct" checked=checked/> Accounting</span>
+       <span class="mkt"><input type="radio" name="major" value="Mktng" checked=checked/> Marketing</span> 
+    </br>
+        <span class="InfoS"><input type="checkbox" name="major" value="IS" checked=checked/> IS</span>
+        <span class="actc"><input type="checkbox" name="major" id="Acct" /> Accounting</span>
+       <span class="mktng"><input type="checkbox" name="major" id="Mktng" /> Marketing</span> 
+    </br>
+        <select name="majors">
+            <option value= "IS"
+            selected="selected"> IS</option>
+            <option value= "Acct"
+            > Accounting</option>
+            <option value="Mktng">
+                Marketing</option>
+        </select>
+    </br>
+        <input type="file" name="Resume" />
+    <input type="submit" value="Subscribe" />
+</br>
+        <textarea name="comment" id="comment" cols="40" rows="4">Type your thoughts here</textarea>
+    </form>
+    </body>
+</html>
